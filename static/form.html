@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Create Certificate</title>
+  <style>
+    body {
+      font-family: Arial;
+      margin: 20px;
+    }
+    label, input {
+      display: block;
+      margin: 10px 0;
+    }
+    button {
+      padding: 10px 15px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <h2>🎓 Fill Certificate Details</h2>
+  <form action="/generate-certificate" method="POST">
+    <label>Name:</label>
+    <input type="text" name="name" required />
+
+    <label>Course:</label>
+    <input type="text" name="course" required />
+
+    <label>Date:</label>
+    <input type="text" name="date" placeholder="May 2, 2025" required />
+
+    <button type="submit">📄 Create Certificate</button>
+  </form>
+</body>
+</html>
